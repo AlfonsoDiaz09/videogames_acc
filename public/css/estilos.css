@@ -1,0 +1,205 @@
+.cont_principal{
+    margin-left: 8.3%;
+}
+
+/*      SILIDER     */
+
+.container__slider{
+    max-width: 1000px;
+    height: 500px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+input[type=radio]{
+    display: none;
+}
+
+.cont{
+    width: 100%;
+    max-width: 800px;
+    height: 100%;
+    max-height: 600px;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.card_img{
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    cursor: pointer;
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+label > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+
+#item-2:checked ~ .cards #selector-1,
+#item-1:checked ~ .cards #selector-3,
+#item-3:checked ~ .cards #selector-2{
+    transform: translateX(-40%) scale(0.8);
+    opacity: 0.6;
+    z-index: 0;
+}
+
+#item-3:checked ~ .cards #selector-1,
+#item-1:checked ~ .cards #selector-2,
+#item-2:checked ~ .cards #selector-3{
+    transform: translateX(40%) scale(0.8);
+    opacity: 0.6;
+    z-index: 0;
+}
+
+#item-1:checked ~ .cards #selector-1,
+#item-2:checked ~ .cards #selector-2,
+#item-3:checked ~ .cards #selector-3{
+    transform: translateX(0) scale(1);
+    z-index: 1;
+}
+
+/*      LOGIN AND REGISTER    */
+
+.txtLogin, .txtRegister{
+    color: #000;
+    text-align: center;
+    font-size: 2em;
+    padding: 1em 0em 0em 0em;
+}
+.container_login, .container_register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contLogin, .contRegister{
+    padding: 0 4em;
+}
+
+/*      CONSULTA CLIENTE - CATEGORIAS - BIBLIOTECA     */
+.card_categorias{
+    background-color: #01175e;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+.card_categorias > ul{
+    margin-top: 2em;
+}
+.list_categori > li{
+    list-style: none;
+    padding: 0.5em;
+    text-align: left;
+}
+.list_categori > li:hover{
+    background-color: #df5a0e;
+    color: #000;
+    cursor: pointer;
+}
+li > a{
+    color: #fff;
+    text-decoration: none;
+}
+li > a:hover{
+    color: #fff;
+}
+.container_games_categoria, .container_games_biblioteca{
+    /* background-color: #d3bc3854; */
+    padding: 1em;
+}
+.card_promos_games{
+    background-color: #01175e;
+}
+.row_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card_game_cont{
+    text-align: center;
+}
+.title_game, .title_game_promo{
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title_game_promo{
+    color: #fff;
+}
+.description_game{
+    text-align: justify;
+    height: 140px;
+    overflow:hidden;
+}
+.txt_descuentos, .txt_categoria{
+    color: #fff;
+    text-align: center;
+    font-size: 2em;
+    padding: 1em 0em 0em 0em;
+}
+.row > a{
+    color: #000;
+    text-decoration: none;
+    padding-top: 1em;
+}
+.row > a:hover{
+    color: #000;
+    background-color: #02bdbd;
+    border-radius: 10px;
+}
+
+/*      BIBLIOTECA     */
+
+.card_Mygame_cont{
+    position: relative;
+    text-align: center;
+}
+.fa-circle-check{
+    position: absolute;
+    color: #fff;
+    font-size: 2.5em;
+    margin-top: -0.5em;
+    margin-left: -0.5em;
+}
+
+.card_apiYT{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card_game_details{
+    padding-top: 3em;
+    justify-content: center;
+}
+.card_game_details > h3{
+    margin-top: 2em;
+}
+.cont_buy h5{
+    margin-left: 3em;
+}
+.p_game_des{
+    text-align: justify;
+    width: 85%;
+    height: 140px;
+    overflow:hidden;
+}
